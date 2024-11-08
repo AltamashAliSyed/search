@@ -1,0 +1,14 @@
+
+
+<ul>
+    {% if results %}
+        {% for p in results %}
+            <li>{{p.title}}</li>
+            <li>{{p.content}}</li>
+        {% endfor %}
+
+        {% else %}
+            <li>No results </li>
+
+    {% endif %}
+</ul>
